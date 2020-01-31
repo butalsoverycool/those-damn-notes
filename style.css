@@ -1,0 +1,297 @@
+/* Usch lite stökig spontanstyling på sina ställen, ber om ursäkt i förskott :O */
+
+/************ BASIC STYLE ****************/ 
+#nextToneBtn{
+    display: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+} 
+
+#wrapper{
+    width: inherit; /* bara lite fulmarginal */
+    height: inherit; 
+    overflow: hidden;
+    background: whitesmoke;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+
+
+#colorField{
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 5vw;
+    background: white;
+    width: 100vw;
+    height: 20vw;
+    text-align: center;  
+}
+
+#logo{
+    width: 55vw;
+    height: 20vw;
+    margin: auto;
+    /*ta in marginaler lite*/
+    margin: -2.5vw auto;
+}
+
+#fieldTxt{
+    font: normal 3em 'Righteous', cursive;  
+}
+
+
+
+#tangentContainer{
+    margin: auto;
+    margin-top: 1vw;
+    height:40vw;
+    width: 84.4vw;
+    box-shadow: -8px 3px 30px darkgrey;
+}
+    
+/*TANGENTER*/
+.white, .black{
+    float:left;
+    height: 40vw;
+    position: relative;
+    left: 0vw;
+    z-index: 0;
+    margin: 0vw;
+}
+.black{
+    height: 27.2vw;
+}
+
+#a {
+    left: 0vw;
+    z-index: 0;
+    width: 4.5vw;
+    height: 40vw;
+}
+#bess {
+    left: -4.5vw;
+    z-index: 1;
+    width: 7vw;
+    
+    background: none;
+}
+#b {
+    left: -7.2vw;
+    z-index: 0;
+    width: 8vw;
+    /*height: 387.2px;*/
+    background: black;
+    
+}
+#c1 {
+    left: -6.8vw;
+    z-index: 0;
+    margin-left: -.8vw;
+    width: 7.7vw;
+    z-index: 0;
+    background: #555555;
+}
+#ciss1 {
+    left: -6.5vw;
+    z-index: 0;
+    margin-left: -4.9vw;
+    width: 6.8vw;
+    z-index: 2;
+    background: none;
+}
+#d1 {
+    z-index: 0;
+    left: -8.7vw;
+    width: 8vw;
+    z-index: 0;
+    background: none;
+}
+#ess1 {
+    z-index: 1;
+    left: -11.3vw;
+    width: 7vw;
+    height: 27.3vw;
+    background: none;
+}
+#e1 {
+    z-index: 0;
+    left: -15.9vw;
+    width: 8vw;
+    z-index: 0;
+    background: none;
+}
+#f1 {
+    z-index: 0;
+    left: -16.3vw;
+    width: 8vw;
+    z-index: 0;
+    background: #444444;
+}
+#fiss1 {
+    z-index: 0;
+    left: -20vw;
+    width: 5.8vw;
+    z-index: 2;
+    background: none;
+}
+#g1 {
+    z-index: 0;
+    left: -22.2vw;
+    width: 8vw;
+    z-index: 0;
+    background: black;
+}
+#giss1 {
+    z-index: 0;
+    left: -24.6vw;
+    width: 5.5vw;
+    z-index: 2;
+    background: none;
+}
+#a1 {
+    z-index: 0;
+    left: -22.2vw;
+    top: -27.2vw;
+    width: 8.1vw;
+    background: black;
+}
+#bess1 {
+    z-index: 1;
+    left: 57.6vw;
+    top: -67.2vw;
+    width: 6.5vw;
+    background: none;
+}
+#b1 {
+    left: 52.4vw;
+    top: -67.2vw;
+    width: 8vw;
+    z-index: 0;
+    background: black;
+}
+#c2 {
+    top: -67.2vw;
+    left: 52.2vw;
+    width: 8vw;
+    z-index: 0;
+    background: black;
+}
+#ciss2 {
+    top: -67.2vw;
+    left: 48.6vw;
+    width: 6.5vw;
+    z-index: 1;
+    background: none;
+}
+#d2 {
+   top: -67.2vw;
+    left: 45.2vw;
+    width: 8vw;
+    z-index: 0;
+    background: black;
+}
+#ess2 {
+    top: -67.2vw;
+    left: 43.3vw;
+    width: 4.1vw;
+    height: 27.6vw;
+    z-index: 0;
+    background: black;
+}
+#e2 {
+    top: -39.6vw;
+    left: 41.0vw;
+    width: 2.3vw;
+    height: 12.4vw;
+    z-index: 0;
+    background: #444444;
+    box-shadow: 5px 0px 20px 0px #f2f2f2;
+}
+        
+#btnContainer{
+    position: relative;
+    display: table;
+    top: -60vw;
+    margin: auto;
+    padding: 0vw;
+    width: 96vw;
+}
+
+.modeBtns{
+    font: normal 8vw 'Righteous', cursive; 
+    float: left;
+    clear: both;
+    margin: 1vw;
+    width: 94vw;
+    border: 3px solid black;
+    background: none;
+}
+
+#modeBtn{
+    padding: 5vw 0;
+    font-size: 10vw;
+}
+
+/********** LITE SKUGG-FX FÖR MUSPEKARE ***********/
+        .white:hover{
+            box-shadow: 0px -5px 20px 0px black;
+            z-index: 1;
+        }
+
+        #a:hover{
+            box-shadow: 3px 0px 10px grey;
+            z-index: 1;
+        }
+
+        #e2:hover{
+            box-shadow: -3px 0px 10px grey;
+            z-index: 1;
+        }
+
+        .white:active{
+            box-shadow: 0px -10px 30px 0px beige;
+            filter: brightness(0);
+            filter: contrast(1.1);
+            z-index: -1;
+        }
+
+        #a:active{
+            box-shadow: 3px 0px 10px white;
+            z-index: 0;
+        }
+
+        #e2:active{
+            box-shadow: -3px 0px 10px beige;
+            z-index: 0;
+        }
+
+        .black:hover{
+            filter: brightness(1.08)contrast(1.1);
+            filter:drop-shadow(0px 3px 10px 2px grey);
+        }
+
+        .black:active{
+            z-index: 2;
+            filter: brightness(.8) contrast(2);  
+            filter:drop-shadow(0px -10px 30px 20px red); 
+        }
+
+        .modeBtns:hover{
+            filter: opacity(80%);
+        }
+
+/******* TILLFÄLLIGA JQUERY-KLASSER ********/
+.offBtn{
+    background: #ed3881;
+    color: black;
+}
+
+.gameON{
+    color: whitesmoke;
+    background: black;
+    border: whitesmoke 3px solid;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webPiano</title>
+    
+    <!-- STYLE RESET -->
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+    
+    <!-- JQUERY CORE -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+    
+    <!-- JQUERY UI -->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
+    
+    <!-- JQUERY MOBILE -->
+    <script src="jquery-mobile.js?v=1"></script> 
+    
+    <!-- MAIN SCRIPT -->
+    <script type="text/javascript">
+        
+    </script>
+    <script src="script.js?v=1"></script>
+    
+    <!-- JQUERY COLOR -->
+    <script
+      src="https://code.jquery.com/color/jquery.color-2.1.2.js"
+      integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8="
+      crossorigin="anonymous"></script>
+    
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    
+    <!-- MAIN STYLE -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    
+    <!-- RESPONSIVE STYLE -->
+    <link type="text/css" rel="stylesheet" href="rwd.css" />
+
+    
+</head>
+
+<body>
+    <!-- LJUD-FILER -->
+    <audio id="SOUNDa">
+        <source src="AUDIO/oggs/SOUNDa.ogg">
+        <source src="AUDIO/mp3s/SOUNDa.mp3">
+    </audio>
+    <audio id="SOUNDbess">
+        <source src="AUDIO/oggs/SOUNDbess.ogg">
+        <source src="AUDIO/mp3s/SOUNDbess.mp3"> 
+    </audio>
+    <audio id="SOUNDb">
+        <source src="AUDIO/oggs/SOUNDb.ogg"> 
+        <source src="AUDIO/mp3s/SOUNDb.mp3"> 
+    </audio>
+    <audio id="SOUNDc1">
+        <source src="AUDIO/oggs/SOUNDc1.ogg">
+        <source src="AUDIO/mp3s/SOUNDc1.mp3"> 
+    </audio>
+    <audio id="SOUNDciss1">
+        <source src="AUDIO/oggs/SOUNDciss1.ogg">
+        <source src="AUDIO/mp3s/SOUNDciss1.mp3">
+    </audio>
+    <audio id="SOUNDd1">
+        <source src="AUDIO/oggs/SOUNDd1.ogg"> 
+        <source src="AUDIO/mp3s/SOUNDd1.mp3">
+    </audio>
+    <audio id="SOUNDess1">
+        <source src="AUDIO/oggs/SOUNDess1.ogg">
+        <source src="AUDIO/mp3s/SOUNDess1.mp3">
+    </audio>
+    <audio id="SOUNDe1">
+        <source src="AUDIO/oggs/SOUNDe1.ogg">
+        <source src="AUDIO/mp3s/SOUNDe1.mp3">
+    </audio>
+    <audio id="SOUNDf1">
+        <source src="AUDIO/oggs/SOUNDf1.ogg">
+        <source src="AUDIO/mp3s/SOUNDf1.mp3">
+    </audio>
+    <audio id="SOUNDfiss1">
+        <source src="AUDIO/oggs/SOUNDfiss1.ogg">
+        <source src="AUDIO/mp3s/SOUNDfiss1.mp3">
+    </audio>
+    <audio id="SOUNDg1">
+        <source src="AUDIO/oggs/SOUNDg1.ogg">
+        <source src="AUDIO/mp3s/SOUNDg1.mp3">
+    </audio>
+    <audio id="SOUNDgiss1">
+        <source src="AUDIO/oggs/SOUNDgiss1.ogg">
+        <source src="AUDIO/mp3s/SOUNDgiss1.mp3">
+    </audio>
+    <audio id="SOUNDa1">
+        <source src="AUDIO/oggs/SOUNDa1.ogg">
+        <source src="AUDIO/mp3s/SOUNDa1.mp3">
+    </audio>
+    <audio id="SOUNDbess1">
+        <source src="AUDIO/oggs/SOUNDbess1.ogg">
+        <source src="AUDIO/mp3s/SOUNDbess1.mp3">
+    </audio>
+    <audio id="SOUNDb1">
+        <source src="AUDIO/oggs/SOUNDb1.ogg">
+        <source src="AUDIO/mp3s/SOUNDb1.mp3">
+    </audio>
+    <audio id="SOUNDc2">
+        <source src="AUDIO/oggs/SOUNDc2.ogg">
+        <source src="AUDIO/mp3s/SOUNDc2.mp3">
+    </audio>
+    <audio id="SOUNDciss2">
+        <source src="AUDIO/oggs/SOUNDciss2.ogg">
+        <source src="AUDIO/mp3s/SOUNDciss2.mp3">
+    </audio>
+    <audio id="SOUNDd2">
+        <source src="AUDIO/oggs/SOUNDd2.ogg">
+        <source src="AUDIO/mp3s/SOUNDd2.mp3">
+    </audio>
+    <audio id="SOUNDess2">
+        <source src="AUDIO/oggs/SOUNDess2.ogg"> 
+        <source src="AUDIO/mp3s/SOUNDess2.mp3">
+    </audio>
+    <audio id="SOUNDe2">
+        <source src="AUDIO/oggs/SOUNDe2.ogg">
+        <source src="AUDIO/mp3s/SOUNDe2.mp3">
+    </audio>
+    
+    <!-- Osynlig btn för ny fråga i Game Mode -->
+    <button id="nextToneBtn"></button>
+
+    <!-- TANGENT-BILDER -->
+    <div id="wrapper">
+        <div id="colorField">
+            <p id="fieldTxt"></p>
+            
+            <img id="logo" src="IMGS/logo.png"/> 
+        </div>
+        
+        <div id='tangentContainer'>
+            <img id="a" class="white" src="IMGS/a.png" />
+            <img id="bess" class="black" src="IMGS/bess.png" />
+            <img id="b" class="white" src="IMGS/b.png" />
+
+            <img id="c1" class="white" src="IMGS/c1.png" />
+            <img id="ciss1" class="black" src="IMGS/ciss1.png" />
+            <img id="d1" class="white" src="IMGS/d1.png" />
+            <img id="ess1" class="black" src="IMGS/ess1.png" />
+            <img id="e1" class="white" src="IMGS/e1.png" />
+            <img id="f1" class="white" src="IMGS/f1.png" />
+            <img id="fiss1" class="black" src="IMGS/fiss1.png" />
+            <img id="g1" class="white" src="IMGS/g1.png" />
+            <img id="giss1" class="black" src="IMGS/giss1.png" />
+            <img id="a1" class="white" src="IMGS/a1.png" />
+            <img id="bess1" class="black" src="IMGS/bess1.png" />
+            <img id="b1" class="white" src="IMGS/b1.png" />
+
+            <img id="c2" class="white" src="IMGS/c2.png" />
+            <img id="ciss2" class="black" src="IMGS/ciss2.png" />
+            <img id="d2" class="white" src="IMGS/d2.png" />
+            <img id="ess2" class="black" src="IMGS/ess2.png" />
+            <img id="e2" class="white" src="IMGS/e2.png" />
+        </div> <!-- hejdå tangentContainer -->
+
+        <div id="btnContainer">
+            <button id="soundBtn" class="modeBtns">sound is <span id="hej">on</span></button>
+            <button id="colorBtn" class="modeBtns">color is <span>on</span></button>
+            <button id="nameBtn" class="modeBtns">name is <span>on</span></button>
+            <button id="modeBtn" class="modeBtns">GAME is <span>OFF</span></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
